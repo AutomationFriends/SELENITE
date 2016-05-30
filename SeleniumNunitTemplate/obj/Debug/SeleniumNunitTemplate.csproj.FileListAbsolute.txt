@@ -1,0 +1,17 @@
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\chromedriver.exe
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\TestData\CalculationData.xlsx
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\lib\Scania.dll
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\SeleniumNunitTemplate.dll.config
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\iCustSeleniumTest.xml
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\SeleniumNunitTemplate.dll
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\SeleniumNunitTemplate.pdb
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\nunit.framework.dll
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\Scania.dll
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\WebDriver.dll
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\WebDriver.Support.dll
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\nunit.framework.xml
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\WebDriver.xml
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\bin\Debug\WebDriver.Support.xml
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\obj\Debug\SeleniumNunitTemplate.csprojResolveAssemblyReference.cache
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\obj\Debug\SeleniumNunitTemplate.dll
+D:\temp\SeleniumNunitTemplate\SeleniumNunitTemplate\obj\Debug\SeleniumNunitTemplate.pdb

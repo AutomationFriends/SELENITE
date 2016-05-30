@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FPRSeleniumTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="testURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://mivhde:Scania27!@testsfpr.scania.com/Site/Login</Value>
+    </Setting>
+    <Setting Name="preprodURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://presfpr.scania.com/Site/Login</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

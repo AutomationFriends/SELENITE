@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SeleniumNunitTemplate</name>
+    </assembly>
+    <members>
+        <member name="T:SeleniumNunitTemplate.BaseSetUp">
+            <summary>
+            This class contains general attributes [SetUp] and [Teardown] which uses all test cases
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.BaseSetUp.URL">
+            <summary>
+            The url to test application
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.BaseSetUp.Setup">
+            <summary>
+            Starts before each test and 
+            contains drivers, urls, and needed instances
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.BaseSetUp.TearDown">
+            <summary>
+            Starts after each test and 
+            contains methods to handle errors and close browser
+            </summary>
+        </member>
+        <member name="P:SeleniumNunitTemplate.BaseSetUp.packageId">
+            <summary>
+            GLOBAL VARIABLES
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ApprovePage.fieldSearch">
+            <summary>
+            Search field 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ApprovePage.buttonViewPackage">
+            <summary>
+            View package button 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.LoginPage.LoginAs(System.String)">
+            <summary>
+            Log in with different roles
+            </summary>
+            <param name="role">Test Package Creator, Test Package Pricer, </param>
+        </member>
+        <member name="T:SeleniumNunitTemplate.PricingPage">
+            <summary>
+            This is a PageFactory class which contains locators for elements on the page -Manage package Page- 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.PricingPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The constructor with PageFactory and driver
+            </summary>
+            <param name="driver">Google Chrome WebDriver</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.listWithDiscountButtons" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.listWithButtons" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.buttonOpenListWithParts" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.dropDownArrow" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldQuantity" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldCost" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldRetailPrice" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldSalesNetPrice" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldTotalCost" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldTotalGross" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldTotalNet" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldGrossProfitAmount" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldGrossProfitPercentage" -->
+        <!-- Badly formed XML comment ignored for member "F:SeleniumNunitTemplate.PricingPage.fieldDiscountPercent" -->
+        <member name="M:SeleniumNunitTemplate.PricingPage.ToDecimal(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Convert price fields to decimal
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.PricingPage.ToDouble(OpenQA.Selenium.IWebElement)">
+            <summary>
+            To Double
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.PricingPage.ToSetDiscountPercentage(System.String)">
+            <summary>
+            Set discount in percent
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.PricingPage.ToFindMarket(System.String)">
+            <summary>
+            Click on the market
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.PricingPage.buttonDiscountOnItems">
+            <summary>
+            Click on button "Discount on itens"
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.PricingPage.buttonPriceForGroup">
+            <summary>
+            Click on button "Price for group"
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.ContentPage">
+            <summary>
+            This is a PageFactory class which contains locators for elements on the page -Conten Page- 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.ContentPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The constructor with PageFactory and driver
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ContentPage.allDropDownLists">
+            <summary>
+            All drop-down lists on the page
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.ContentPage.searchElementByTextInDropDown(System.String,System.Collections.Generic.IList{OpenQA.Selenium.IWebElement})">
+            <summary>
+            Search element by text in drop-down that will appear when you click on Parts/Labour/Sundries  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SeleniumNunitTemplate.ContentPage.dropDownSelectPart(System.String)">
+            <summary>
+            Parts drop-down list 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.ContentPage.dropDownSelectLabour(System.String)">
+            <summary>
+            Labour drop-down list
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.ContentPage.dropDownSelectSundries(System.String)">
+            <summary>
+            Sundries drop-down list
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ContentPage.buttonAddParts">
+            <summary>
+            Button Add Parts
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ContentPage.buttonAddLabour">
+            <summary>
+            Button Add Labour
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ContentPage.buttonAddSundries">
+            <summary>
+            Button Add Sundries
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ContentPage.buttonSave">
+            <summary>
+            Button Save
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ContentPage.checkbox_MAIN_PART">
+            <summary>
+            Checkbox "MAIN PART" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ContentPage.headerWithPackageId">
+            <summary>
+            Header with the package Id
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ContentPage.alertMessage">
+            <summary>
+            Alert message e.g "Success! Package has been saved"
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.ContentPage.waitForActivePage(System.String)">
+            <summary>
+            Wait that the page with a specified number will be active
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.ContentPage.ChoosePartLabourAndSundry(System.String,System.String,System.String)">
+            <summary>
+            Choose Part, Labour and Sundry from the drop-down lists  
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.ContentPage.GetPackageId">
+            <summary>
+            Function to get package Id
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.DescriptionPage">
+            <summary>
+            This is a PageFactory class which contains locators for elements on the page -Create Page- 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.DescriptionPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The constructor with PageFactory and driver
+            </summary>
+            <param name="driver">WebDriver</param>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.createPackageTitle">
+            <summary>
+            The page title
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.fieldVariantDescription">
+            <summary>
+            Field "VARIANT DESCRIPTION" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.fieldReasonForPackage">
+            <summary>
+            Field "REASON FOR PACKAGE" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.fieldPackageName">
+            <summary>
+            Field "PACKAGE NAME" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.fieldPackageDescription">
+            <summary>
+            Field "PACKAGE DESCRIPTION" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.fieldCode">
+            <summary>
+            Field "CODE" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.fieldWorkorderText">
+            <summary>
+            Field "WORKORDER TEXT" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.fieldInvoiceText">
+            <summary>
+            Field "INVOICE TEXT" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.listMainGroup">
+            <summary>
+            List "MAIN GROUP" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.listSubGroup">
+            <summary>
+            List "SUB GROUP" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.buttonSave">
+            <summary>
+            Button "Save"
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.buttonNext">
+            <summary>
+            Button "Next"
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.buttonContent">
+            <summary>
+            Button "2 Content"
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.tooltipSvenska">
+            <summary>
+            TOOLTIP "Svenska"
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.alertMessage">
+            <summary>
+            Alert message e.g "Success! Package has been saved"
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.DescriptionPage.listVehicleType">
+            <summary>
+            The list with "VEHICLE TYPE" 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.DescriptionPage.ToFillOutDescription(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Fill out description page
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.HomePage">
+            <summary>
+            This is a PageFactory class which contains locators for elements on the page -Home Page- 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.HomePage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The constructor with PageFactory and driver
+            </summary>
+            <param name="driver">Internet Explorer WebDriver</param>
+        </member>
+        <member name="F:SeleniumNunitTemplate.HomePage.mainPageTitle">
+            <summary>
+            The page title
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.HomePage.menuPackages">
+            <summary>
+            Menu "Packages" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.HomePage.menuCreate">
+            <summary>
+            Menu "Create" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.HomePage.allIcons">
+            <summary>
+            Big Icons 
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.PackagesMenu">
+            <summary>
+            This is a PageFactory class which contains locators for elements on the page -Manage package Page- 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.PackagesMenu.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The constructor with PageFactory and driver
+            </summary>
+            <param name="driver">Google Chrome WebDriver</param>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PackagesMenu.buttonManage">
+            <summary>
+            Button "Manage" 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PackagesMenu.buttonSearch">
+            <summary>
+            Button Advance Search
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.PreviewPage">
+            <summary>
+            This is a PageFactory class which contains locators for elements on the page -Manage package Page- 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.PreviewPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The constructor with PageFactory and driver
+            </summary>
+            <param name="driver">Google Chrome WebDriver</param>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PreviewPage.buttonEdit">
+            <summary>
+            Button "Edit"
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PreviewPage.buttonSendForApproval">
+            <summary>
+            Button "Send for approval"
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PreviewPage.buttonSendForApprovalConfirm">
+            <summary>
+            Button "Send for approval" on cofirmation dialog
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PreviewPage.buttonPricePackage">
+            <summary>
+            Button "Price package"
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PreviewPage.buttonApprove">
+            <summary>
+            Button "Approve" on Preview page
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PreviewPage.buttonApproveOnConfirmationDialog">
+            <summary>
+            Button "Approve" on the confirmation dialog
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PreviewPage.buttonNext">
+            <summary>
+            Button "Next"
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.PreviewPage.dropdownSelectApprover">
+            <summary>
+            Drop-down "Select approver"
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.ManagePackages">
+            <summary>
+            This is a PageFactory class which contains locators for elements on the page -Manage package Page- 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.ManagePackages.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The constructor with PageFactory and driver
+            </summary>
+            <param name="driver">Internet Explorer WebDriver</param>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ManagePackages.mainPageTitle">
+            <summary>
+            The page title
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ManagePackages.fieldSearch">
+            <summary>
+            Search field 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ManagePackages.buttonViewPackage">
+            <summary>
+            View package button 
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.ManagePackages.SearchablePackage">
+            <summary>
+            The first package in the search
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.SearchPage">
+            <summary>
+            This is a PageFactory class which contains locators for elements on the page -Manage package Page- 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.SearchPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The constructor with PageFactory and driver
+            </summary>
+            <param name="driver">Google Chrome WebDriver</param>
+        </member>
+        <member name="F:SeleniumNunitTemplate.SearchPage.buttonNext">
+            <summary>
+            Button Next
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.SearchPage.buttonAdvanceSearch">
+            <summary>
+            Button Advance Search
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.SearchPage.buttonSearch">
+            <summary>
+            Button Search
+            </summary>
+        </member>
+        <member name="F:SeleniumNunitTemplate.SearchPage.buttonsPackageView">
+            <summary>
+            View package button 
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.BaseSetUp1">
+            <summary>
+            This class contains general attributes [SetUp] and [Teardown] which uses all test cases
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.BaseSetUp1.Setup">
+            <summary>
+            Starts before each test and 
+            contains drivers, urls, and needed instances
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.BaseSetUp1.TearDown">
+            <summary>
+            Starts after each test and 
+            contains methods to handle errors and close browser
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_B_Calculation.Test_B_1_Calculation_SalesNetPrice">
+            <summary>
+            Calculation SALES NET PRICE
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_B_Calculation.Test_B_2_Calculation_TotalNet">
+            <summary>
+            Calculation TOTAL NET
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_B_Calculation.Test_B_3_Calculation_TotalGross">
+            <summary>
+            Calculation TOTAL GROSS
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_B_Calculation.Test_B_4_Calculation_TotalCost">
+            <summary>
+            Calculation TOTAL COST
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_B_Calculation.Test_B_5_Calculation_Gross_Profit_Amount">
+            <summary>
+            Calculation GROSS PROFIT AMOUNT
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_B_Calculation.Test_B_6_Calculation_Gross_Profit_Percentage">
+            <summary>
+            Calculation GROSS PROFIT PERCENTAGE
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_B_Calculation.Test_B_7_Calculation_Total_Cost_Distributor">
+            <summary>
+            Calculation TOTAL COST DISTRIBUTOR 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_B_Calculation.Test_B_8_Calculation_Gross_Profit_Distributor_Amount">
+            <summary>
+            Calculation GROSS PROFIT DISTRIBUTOR AMOUNT
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_B_Calculation.Test_B_9_Calculation_Gross_Profit_Distributor_Percentage">
+            <summary>
+            Calculation GROSS PROFIT DISTRIBUTOR PERCENTAGE
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.TestCase_WorkingWithPackages">
+            <summary>
+            This class contains tests and data sources
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestCase_WorkingWithPackages.Test_A_0_CreateNewPackage(System.String)">
+            <summary>
+            Create a new package with the status "New package"
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestCase_WorkingWithPackages.Test_A_1_CreateDraftPackage(System.String)">
+            <summary>
+            Create a new package with the status "Draft package" 
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestCase_WorkingWithPackages.Test_A_2_ManagePackageAddContent(System.String)">
+            <summary>
+            Create a package with the status "New package" then go to manage package and add content to a package, 
+            verify that the package status is changed to "Draft package"
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestCase_WorkingWithPackages.Test_A_3_SendForApproval(System.String)">
+            <summary>
+            The role: Test Package Creator
+            The flow: Create a package -> Add content -> Send for approval
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestCase_WorkingWithPackages.Test_A_4_SendForApprovalAndApprove(System.String)">
+            <summary>
+            The role: Test Package Creator, Test Package Pricer
+            The flow: (As Test Package Creator) Create a package -> Add content -> Send for approval 
+                      (As Test Package Pricer) -> Approve the package                               
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestCase_WorkingWithPackages.Test_A_5_ManageOpenPackageNewTab">
+            <summary>
+            Manage packages -> Open a package -> Verify that the package was opened in a new tab
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestCase_WorkingWithPackages.Test_A_6_AdvanceSearchOpenPackageNewTab">
+            <summary>
+            Packages -> Search -> Advance Search -> Verify that the package was opened in a new tab
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.TestSuite_C_UI_Verification">
+            <summary>
+            This class contains tests and data sources
+            </summary>
+        </member>
+        <member name="M:SeleniumNunitTemplate.TestSuite_C_UI_Verification.Test_C_0_FetchPackagePrices">
+            <summary>
+            Search a package -> Price package -> Choose MARKET -> Set a DISCOUNT -> Verify "SALES NET PRICE" calculation 
+            </summary>
+        </member>
+        <member name="T:SeleniumNunitTemplate.GetTestData_W1">
+            <summary>
+            Import data from Excel file worksheet 1
+            </summary>
+        </member>
+    </members>
+</doc>
